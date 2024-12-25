@@ -1,0 +1,145 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Main content section */
+main {
+    margin-top: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.image-item img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small Devices (Mobile) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em; /* Smaller header text */
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation links vertically */
+        margin-bottom: 10px;
+    }
+
+    .image-gallery {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center the images */
+    }
+
+    .image-item img {
+        width: 100%; /* Images take full width */
+        max-width: 90%; /* Limit image width */
+    }
+
+    footer {
+        font-size: 0.9em; /* Smaller footer text */
+    }
+}
+
+/* Medium Devices (Tablet) */
+@media (max-width: 900px) {
+    header h1 {
+        font-size: 2.2em; /* Slightly smaller heading for tablets */
+    }
+
+    nav ul li {
+        display: inline-block; /* Links are inline but with space between them */
+        margin-right: 15px;
+    }
+
+    .image-gallery {
+        flex-direction: row; /* Display images in a row on tablets */
+        justify-content: center; /* Center the images */
+    }
+
+    .image-item img {
+        max-width: 250px; /* Smaller images on tablets */
+    }
+}
+
+/* Large Devices (Desktop) */
+@media (min-width: 901px) {
+    header h1 {
+        font-size: 3em; /* Larger heading on desktops */
+    }
+
+    nav ul li {
+        display: inline; /* Keep navigation links inline */
+    }
+
+    .image-gallery {
+        display: flex; /* Flexbox layout for images */
+        gap: 20px;
+        justify-content: flex-start; /* Align images to the left */
+    }
+
+    .image-item img {
+        max-width: 300px; /* Larger images for desktops */
+    }
+}

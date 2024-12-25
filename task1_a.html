@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card with Bulma</title>
+
+    <!-- Bulma CSS (via CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css">
+
+    <!-- Custom CSS (Optional) -->
+    <style>
+        .card-image img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Section to contain the cards -->
+    <section class="section">
+        <div class="container">
+            <!-- Columns to layout the cards -->
+            <div class="columns is-multiline">
+                <!-- Card 1 -->
+                <div class="column is-one-third">
+                    <div class="card">
+                        <!-- Card Image -->
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="card1.webp" alt="Placeholder Image">
+                            </figure>
+                        </div>
+                        <!-- Card Content -->
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">Card Title</p>
+                                    <p class="subtitle is-6">Card Subtitle</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                This is a simple example of a responsive card component. Bulma makes it easy to create layouts.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="column is-one-third">
+                    <div class="card">
+                        <!-- Card Image -->
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="card2.png" alt="Placeholder Image">
+                            </figure>
+                        </div>
+                        <!-- Card Content -->
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">Card Title 2</p>
+                                    <p class="subtitle is-6">Card Subtitle 2</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                This is another card. Bulma's grid system automatically adjusts the layout for smaller screens.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="column is-one-third">
+                    <div class="card">
+                        <!-- Card Image -->
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <img src="card3.webp" alt="Placeholder Image">
+                            </figure>
+                        </div>
+                        <!-- Card Content -->
+                        <div class="card-content">
+                            <div class="media">
+                                <div class="media-content">
+                                    <p class="title is-4">Card Title 3</p>
+                                    <p class="subtitle is-6">Card Subtitle 3</p>
+                                </div>
+                            </div>
+                            <div class="content">
+                                Here's a third card! It also adapts to smaller screen sizes using Bulma's responsive grid.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- End of Columns -->
+        </div> <!-- End of Container -->
+    </section> <!-- End of Section -->
+</body>
+
+</html>
